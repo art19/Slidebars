@@ -168,11 +168,11 @@
 					removeAnimation();
 				} else {
 					selector.css({
-					    '-webkit-transform': 'translate(' + amount + ')'),
-					    '-moz-transform': 'translate(' + amount + ')'),
-					    '-o-transform': 'translate(' + amount + ')'),
-					    'transform': 'translate(' + amount + ')')
-					});
+				    '-webkit-transform': 'translate(' + amount + ')',
+				    '-moz-transform': 'translate(' + amount + ')',
+				    '-o-transform': 'translate(' + amount + ')',
+				    'transform': 'translate(' + amount + ')'
+				  })
 				}
 
 			} else if ( animation === 'side' ) {
