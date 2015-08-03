@@ -167,7 +167,12 @@
 				if ( amount === '0px' ) {
 					removeAnimation();
 				} else {
-					selector.css( 'transform', 'translate( ' + amount + ' )' ); // Apply the animation.
+					selector.css({
+					    '-webkit-transform': 'translate(' + amount + ')'),
+					    '-moz-transform': 'translate(' + amount + ')'),
+					    '-o-transform': 'translate(' + amount + ')'),
+					    'transform': 'translate(' + amount + ')')
+					});
 				}
 
 			} else if ( animation === 'side' ) {
